@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             DOM(array, display);
             }
         } else {
-            alert('Please input required values');
+            alert('Umieść wszystkie dane');
         }
 
         [appliance.value, watts.value, time.value, numOfappliances.value] =
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             totalWatts += newArray[kd];
         }
         solarEnergyNeeded = (totalWatts) / 1000;
-        watts_display.innerHTML = `${solarEnergyNeeded}kW per day`;
+        watts_display.innerHTML = `${solarEnergyNeeded}kW dziennie`;
     });
 
     /**Handles removing elements from the ArrayList 

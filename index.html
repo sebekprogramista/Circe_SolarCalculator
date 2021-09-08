@@ -22,33 +22,23 @@
 </head>
 
 <body>
-	<h1 id="logo">CIRCE</h1>
+
 	<div class="text-center">
-		<h1>Solar Calculator App</h1>
+		<h1>Kalkulator zużycia energi</h1>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-12">
-						<h3>How much solar power do you need?</h3>
-					</div>
-				</div>
-			</div>
-			<div class="alert">
-				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-				Hi Circe user, to get your power consumption(watt) check the wattage label at the back or bottom of your device.
-			</div>
+			
 			<div class="col-sm-7">
 				<form>
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-6">
-								<label for="electronic type"> Electronic Type:</label>
+								<label for="electronic type"> Rodzaj urządzenia:</label>
 								<input type="text" id="appliance" class="form-control">
 							</div>
 							<div class="col-sm-6">
-								<label for="quantity"> Quantity:</label>
+								<label for="quantity"> Ilość:</label>
 								<input type="number" id="numberOfappliances" class="form-control">
 							</div>
 						</div>
@@ -56,12 +46,16 @@
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-4">
-								<label for="hours"> Hours of use per day:</label>
+								<label for="hours"> Liczba godzin w dniu aktywnego urządzenia :</label>
 								<input type="number" min="1" max="24" id="hours" class="form-control">
 							</div>
 							<div class="col-sm-4">
-								<label for="power"> Power consumption (watts):</label>
+								<label for="power"> Pobór mocy (w wattach):</label>
 								<input type="number" id="watts" class="form-control">
+							</div>
+							<div class="col-sm-4">
+								<label for="voltage"> Battery Voltage:</label>
+								<input type="number" class="form-control">
 							</div>
 							<div class="col-sm-4">
 								<label for="voltage"> Battery Voltage:</label>
@@ -69,24 +63,9 @@
 							</div>
 						</div>
 					</div>
+					
 					<div class="form-group">
-						<div class="row">
-							<div class="col-sm-4">
-								<label for="panel-wattage"> Solar panel wattage:</label>
-								<input type="number" class="form-control">
-							</div>
-							<div class="col-sm-4">
-								<label for="capacity"> Battery Capacity:</label>
-								<input type="number" class="form-control">
-							</div>
-							<div class="col-sm-4">
-								<label for="sunlight"> Hours of sunlight per day:</label>
-								<input type="number" min="1" max="24" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						Click Here to add to List
+						Naciśnij aby dodać urządzenie 
 						<button id="add">+</button>
 					</div>
 				</form>
@@ -96,14 +75,12 @@
 			<div class="col-sm-5">
 				<div class="container-fluid circe-display">
 					<div class="text-center">
-						<p>To run your household, you need:</p>
-						<div class="watts-display">0kW per day</div>
+						<p>Całkowity pobór mocy:</p>
+						<div class="watts-display">0kW na dzień</div>
 					</div>
 					<br>
 					<br>
-					<div class="text-center">
-						<small><em>Powered By Circe Energy</em></small>
-					</div>
+					
 				</div>
 			</div>
 		</div>

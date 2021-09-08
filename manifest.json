@@ -1,13 +1,13 @@
 {
     "dir" : "ltr",
     "lang" : "en",
-    "name" : "Circe",
+    "name" : "SebastianZielinski",
     "scope" : "/",
     "display" : "standalone",
     "start_url" : "https://circe-solar-app.netlify.com/",
-    "short_name" : "Circe Solar",
+    "short_name" : "kalkulator energi",
     "theme_color" : "#011B33",
-    "description" : "A Solar Energy Calculator.",
+    "description" : "kalkulator sumujący zyżycie energi w domu",
     "orientation" : "any",
     "background_color" : "#fff",
     "generated" : "true"
